@@ -22,5 +22,5 @@ function sha256(content) {
     hasher.update(content);
     return CryptoApi.encoder.toHex(hasher.finalize());
     */
-    return CryptoApi.hash('sha256', textContent);
+    return CryptoApi.hash('sha256', content);
 }
