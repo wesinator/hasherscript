@@ -12,7 +12,7 @@ if (document.contentType == "text/plain") {
     var textContent = document.documentElement.innerText;
 
     var sha256 = sha256(textContent);
-    console.log("SHA256:", sha256);
+    console.info("SHA256:", sha256);
 }
 
 function sha256(content) {
